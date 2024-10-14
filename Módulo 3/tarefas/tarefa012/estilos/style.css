@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap');
+
+:root{
+    --fonte1: Arial, Helvetica, sans-serif;
+    --fonte2: "Bevan", cursive;
+}
+
+html, body{
+    min-height: 100%;
+    background-color: darkgray;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1{
+    padding-top: 50px;
+    /*text-tranform: uppercase -> deixa as letras todas maiúsculas*/
+    font-variant: small-caps;
+    font-family:var(--fonte2);
+    font-size: 50px;
+}
+
+header p{
+    padding-bottom: 50px;
+    font-size: 25px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+section{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte1);
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(46, 45, 45);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.534);
+    background-attachment: fixed;
+}
+
+section#img01{
+    background-image: url(../imagens/peito.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#img02{
+    background-image: url(../imagens/agachamento.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.imagem p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.438);
+    text-shadow: 1px 1px 0px black;
+}
+
+section.imagem h2{
+    text-shadow: 2px 2px 0px black;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
