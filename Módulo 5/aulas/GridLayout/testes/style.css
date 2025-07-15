@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(20, 20, 20);
+    color: #f5f5f5;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    border: 1px solid #f5f5f5;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 20px;
+}
+
+.item {
+    border: 1px solid #f5f5f5;
+}
