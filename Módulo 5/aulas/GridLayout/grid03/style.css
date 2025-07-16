@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  border: 3px solid black;
+  display: grid;
+  grid-template: repeat(1, 80px) / 1fr 2fr 1fr;/*grid-template-row / grid-template-columns*/
+  grid-auto-rows: 80px;
+  grid-auto-columns: 120px;
+  grid-auto-flow: row;/*Altera a direção que o novo item vai se encaixar no grid implicito*/
+  place-items: normal normal;/*Align-items justify-items*/
+  place-content: normal normal;/*Align-content justify-content*/
+  gap: 10px;
+}
+
+.item {
+  border: 3px solid rgb(207, 49, 49);
+  padding: 5px;
+}
