@@ -1,0 +1,34 @@
+body {
+  display: grid;
+  grid-template: repeat(10, 100px) / repeat(4, 1fr);
+  border: 1px solid black;
+}
+
+.caixa1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-row-start: 1;
+  grid-row-end: 10;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  border: 1px solid black;
+}
+
+.caixa2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 1 / 10;
+  grid-column: 2 / 4;
+  border: 1px solid black;
+}
+
+.caixa3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: 1 / 4 / 10 / 5;
+  /*grid-row-start / gid-column-start / grid-start-end / grid-column-end*/
+  border: 1px solid black;
+}
