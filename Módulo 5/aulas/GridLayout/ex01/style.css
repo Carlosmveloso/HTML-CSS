@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  border: 1px solid black;
+  height: 100vh;
+  display: grid;
+  grid-template: 150px 100px repeat(2, 1fr) 100px / repeat(5, auto);
+}
+
+.topo {
+  border: 1px solid black;
+  grid-row: 1 / 2;
+  grid-column: 1 / 6;
+}
+
+.menu {
+  border: 1px solid black;
+  grid-row: 2 / 3;
+  grid-column: 1 / 6;
+}
+
+.principal {
+  border: 1px solid black;
+  grid-row: 3 / 5;
+  grid-column: 1 / 5;
+}
+
+.secundario {
+  border: 1px solid black;
+  grid-row: 3 / 5;
+  grid-column: 5 / 6;
+}
+
+.rodape {
+  border: 1px solid black;
+  grid-row: 5 / 6;
+  grid-column: 1 / 6;
+}
